@@ -62,26 +62,16 @@ var quiz_answers = {};
             }
             $('.quiz-continue-error').hide();
 
-            // var form = $('#custom_quiz_customer_form_wrap form');
-            // $(form).find('#customer_email').val($('#email').val());
-            // $.ajax({
-            //     // url: $(form).attr('action'),
-            //     url: '/contact#contact_form',
-            //     type: 'post',
-            //     processData: false,
-            //     contentType: false,
-            //     mimeType: 'multipart/form-data',
-            //     data: form.serialize(),
-            //     // headers: {
-            //     //     'Content-Type': "application/json; charset=utf-8",
-            //     // },
-            //     success: function(resp) {
-                    
-            //     }
+            $.ajax({
+                url: 'https://piper-golf-app.herokuapp.com/create-customer',
+                type: 'post',
+                data: {
+                    email: $('#email').val()
+                },
+                success: function(resp) {
+                }
+            })
 
-            // })
-            // $('#custom_quiz_customer_form_wrap #customer_email').val($('#email').val());
-            // $('#custom_quiz_customer_form_wrap form').submit();
             $('.quiz-page').addClass('loading');
             $.ajax({
                 url: 'https://piper-golf-app.herokuapp.com/result',
