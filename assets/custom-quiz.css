@@ -27,6 +27,9 @@ body.custom-quiz-popup {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: Lato;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
 
 /* Hide the browser's default checkbox */
@@ -41,7 +44,7 @@ body.custom-quiz-popup {
 /* Create a custom checkbox */
 .quiz-checkbox-container .checkmark {
     position: absolute;
-    top: 7px;
+    top: 4px;
     left: 0;
     height: 21px;
     width: 21px;
@@ -125,17 +128,23 @@ body.custom-quiz-popup {
 
 
 .quiz-btn {
-    padding: 10px 20px;
+    padding: 22px 40px;
     background: #000000;
     color: #ffffff;
     border: 0px;
     cursor: pointer;
     text-align: center;
-    min-width: 200px;
+    /* min-width: 200px; */
+    border: 1px solid transparent;
+    font-family: geller-headline;
+    font-weight: 500;
 }
 
 .quiz-btn:hover {
-    opacity: .8;
+    /* opacity: .8; */
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
 }
 
 .quiz-btn[disabled] {
@@ -224,6 +233,8 @@ body.custom-quiz-popup {
     text-align: center;
     font-weight: bold;
     margin-bottom: 0px;
+    font-size: 20px;
+    font-family: 'Lato';
 }
 
 .quiz-product-desc {
@@ -231,6 +242,10 @@ body.custom-quiz-popup {
     margin: 0px;
     margin-bottom: 20px;
     min-height: 46.5px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 15px;
+    font-family: 'Lato';
 }
 
 .quiz-product-cart-btn-title {
@@ -279,6 +294,11 @@ body.custom-quiz-popup {
     font-size: 20px;
 }
 
+.quiz-option-answer-wrap {
+    font-family: Lato;
+    font-size: 18px;
+}
+
 .quiz-option-answer-wrap.selected {
     background: #004aad;
     color: #ffffff;
@@ -286,6 +306,11 @@ body.custom-quiz-popup {
 
 .quiz-product-add-btn {
     margin-bottom: 15px;
+    padding: 10px 20px;
+}
+
+.quiz-product-subscribe-btn {
+    padding: 10px 20px;
 }
 
 .custom-quiz-test-btn {
@@ -422,6 +447,10 @@ body.custom-quiz-popup {
     background: #ffffffa1;
 }
 
+.quiz-continue-error {
+    color: #A21818;
+}
+
 @media screen and (max-width: 1200px) {
     .quiz-content {
         width: 80%;
@@ -492,5 +521,15 @@ body.custom-quiz-popup {
     .quiz-footer-hr {
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+
+    .custom-quiz-close-btn {
+        font-size: 48px;
+        line-height: 48px;
+        right: 5%;
+    }
+
+    .quiz-page {
+        padding-top: 60px;
     }
 }
