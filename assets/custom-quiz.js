@@ -66,6 +66,7 @@ var quiz_answers = {};
                 url: 'https://piper-golf-app.herokuapp.com/create-customer',
                 type: 'post',
                 data: {
+                    answers: quiz_answers,
                     email: $('#email').val()
                 },
                 success: function(resp) {
