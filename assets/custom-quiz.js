@@ -18,7 +18,8 @@ var quiz_answers = {};
             type: 'get',
             // dataType: 'json',
             success: function(resp) {
-                $('.quiz-page-wrap').html(resp);
+              	
+                $('.quiz-page-wrap').html(resp.replace("CONTINUE", "Continue"));
                 $('.quiz-page').removeClass('loading');
                 $('.quiz-page-wrap').fadeIn();
 
@@ -83,7 +84,11 @@ var quiz_answers = {};
                 success: function(resp) {
                     step_cur ++;
                     goStep(step_cur);
-                    $('.quiz-step-products').html(resp);
+                  
+                  	let rsp = resp.replaceAll("ADD TO CART", "Add to Cart");
+                  	rsp = rsp.replaceAll("SUBSCRIBE", "Subscribe");
+                  
+                    $('.quiz-step-products').html(rsp);
                     $('.quiz-page').removeClass('loading');
                     $('.quiz-page-wrap').fadeIn();
                 }
@@ -141,7 +146,11 @@ var quiz_answers = {};
                 success: function(resp) {
                     step_cur ++;
                     goStep(step_cur);
-                    $('.quiz-step-products').html(resp);
+                  
+                  	let rsp = resp.replaceAll("ADD TO CART", "Add to Cart");
+                  	rsp = rsp.replaceAll("SUBSCRIBE", "Subscribe");
+                  
+                    $('.quiz-step-products').html(rsp);
                     $('.quiz-page').removeClass('loading');
                     $('.quiz-page-wrap').fadeIn();
                 }

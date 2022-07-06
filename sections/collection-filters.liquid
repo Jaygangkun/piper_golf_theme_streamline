@@ -1,0 +1,24 @@
+{% render 'collection-grid-filter-controls', section: section, collection: collection %}
+
+{% schema %}
+  {
+    "name": "Collection filter",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Allow your customers to filter collections and search results by product availability, price, color, and more. [Customize filters](/admin/menus)"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_color_swatches",
+        "label": "Enable color swatches",
+        "info": "[View setup instructions](https://archetypethemes.co/blogs/streamline/how-do-i-set-up-color-swatches)"
+      },
+      {
+        "type": "checkbox",
+        "id": "collection_sort_enable",
+        "label": "Show sort options"
+      }
+    ]
+  }
+{% endschema %}

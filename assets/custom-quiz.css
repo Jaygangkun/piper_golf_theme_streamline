@@ -128,7 +128,7 @@ body.custom-quiz-popup {
 
 
 .quiz-btn {
-    padding: 22px 40px;
+    padding: 15px 40px;
     background: #000000;
     color: #ffffff;
     border: 0px;
@@ -533,3 +533,25 @@ body.custom-quiz-popup {
         padding-top: 60px;
     }
 }
+
+
+.quiz-product-list .quiz-product-col:before {    
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    background: black;
+    color: white;
+    padding: 5px 8px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+}
+
+.quiz-product-list .quiz-product-col:nth-child(1):before {
+    content: "1";
+}
+
+.quiz-product-list .quiz-product-col:nth-child(2):before {
+    content: "2";
+}
+
